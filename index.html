@@ -4,52 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>froms code with harry</title>
+    <title>inline, external,internal css</title>
+    <!-- <style>
+        h1{
+            color: blue;
+            background-color: red;
+        }
+    </style>
+            -->
+    <!-- this a internal css which works in bulk -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>form for the enrollment of the course</h1>
-    <form action="post">
-    <div>
-        <label for="username">enter your username</label><input type="text" id="username" name="username"
-                placeholder="enter your full name">
-    </div>
+    <h1 >this is the 3 ways to add css </h1>
+    <!--this is inline css which is not recommended very much-->>
 
-    <div>
-        <input type="password" name="password" placeholder="Enter your password">
-    </div>
-    <div>
-        <input type="radio" id="male" name="gender" value="male">
+    <ol>
+        <li style="color: brown; background-color: yellow;">inline css</li>
+        <li>internal css</li>
+        <li>external css</li>
+        <!-- write a style tag on the end of the head -->
+    </ol>
 
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">female</label>
-        <input type="radio" id="female" name="gender" value="rathernotsay">
-        <label for="female">hizra</label></form>
-    </div>
-    <div>
-
-        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-        <label for="subscribe">Subscribe to newsletter</label>
-    </div>
-    <div>
-        <label for="comment">enter your comment here</label>
-        <br><!--not recommended-->
-        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="enter your thoughts"></textarea>
-    </div>
-    <div>
-        <select name="fruits">
-            <option value="apple">Apple</option>
-            <option value="banana">Banana</option>
-            <option value="cherry">Cherry</option>
-        </select>
-    </div>
-    <div>
-        <input type="submit" value="submit" placeholder="submit">
-    </div>
-    <div>
-        <input type="reset" value="reset">
-    </div></form>
 </body>
 
 </html>
